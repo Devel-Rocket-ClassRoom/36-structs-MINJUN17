@@ -39,16 +39,4 @@ Console.WriteLine($"평균 가격: {averagePrice}골드");
 Console.WriteLine($"가장 비싼 아이템: {maxPriceItem}");
 Console.WriteLine($"가장 가벼운 아이템: {minWeightItem}");
 
-struct InventoryItem
-{
-    public string Name;
-    public double Weight;
-    public int Price;
 
-    public InventoryItem(string name , double weight, int price)
-    {
-        Name = name; 
-        Weight = weight; 
-        Price = price;
-    }
-}
