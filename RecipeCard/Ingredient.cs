@@ -13,5 +13,4 @@ struct Ingredient
         Amount = amount;
         Unit = unit;
     }
-    
 }

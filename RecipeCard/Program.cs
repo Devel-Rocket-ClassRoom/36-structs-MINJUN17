@@ -9,3 +9,4 @@ pasta[3] = new Ingredient("마늘", 3, "쪽");
 RecipeCard pastaRecipe = new RecipeCard("토마토 파스타", 2, pasta);
 pastaRecipe.PrintRecipe();
 pastaRecipe.ScaleRecipe(3);
+pastaRecipe.PrintRecipe();

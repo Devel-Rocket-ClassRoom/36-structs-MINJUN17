@@ -30,17 +30,13 @@ struct RecipeCard
         Console.WriteLine();
 
     }
-    public void ScaleRecipe(int newServings)
+    public RecipeCard ScaleRecipe(int newServings)
     {
-        double Change = (double)newServings / (double)Servings;
-        Console.WriteLine($"=== {newServings}인분으로 변환 ===");
-        Console.WriteLine($"[{Name}] ({newServings}인분)");
-        Console.WriteLine("재료:");
         for (int i = 0; i < Ingredients.Length; i++)
         {
-            Console.WriteLine($"- {Ingredients[i].Name}: {Ingredients[i].Amount*Change}{Ingredients[i].Unit}");
+            Ingredients[i].Amount *= ((double)newServings /Servings);
         }
-        Console.WriteLine();
-
+        Servings = newServings;
+        return this;
     }
 }
